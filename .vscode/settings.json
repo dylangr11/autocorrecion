@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./Autocorreccion/Autocorreccion",
+        "./Autocorreccion/Autocorreccion/code"
+    ]
+}

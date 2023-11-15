@@ -1,0 +1,12 @@
+  flower:
+    image: mher/flower
+    environment:
+      #- CELERY_BROKER_URL=amqp://rabbit_user:R@b1tMQsud@10.250.55.232:5672/rabbitmqhost
+      #- BROKER_URL=amqp://rabbit_user:R@b1tMQsud@10.250.55.232:5672/rabbitmqhost
+      - CELERY_BROKER_URL= amqp://ufinet:ufinet.2020@10.40.6.36/
+      - BROKER_URL= amqp://ufinet:ufinet.2020@10.40.6.36/
+      - FLOWER_PORT=8888
+    #links:
+    #  - rabbitmq:rabbitmq cola intalada en el servidor
+    ports:
+      - 8888:8888
